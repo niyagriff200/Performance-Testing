@@ -33,6 +33,7 @@
             btnSort = new Button();
             lblGenerateTime = new Label();
             lblSortTime = new Label();
+            lblArray = new Label();
             ((System.ComponentModel.ISupportInitialize)numArrayNumber).BeginInit();
             SuspendLayout();
             // 
@@ -58,13 +59,14 @@
             // 
             // btnSort
             // 
+            btnSort.Enabled = false;
             btnSort.Location = new Point(71, 336);
             btnSort.Name = "btnSort";
             btnSort.Size = new Size(188, 58);
             btnSort.TabIndex = 2;
             btnSort.Text = "Sort";
             btnSort.UseVisualStyleBackColor = true;
-            btnSort.Click += this.btnSort_Click;
+            btnSort.Click += btnSort_Click;
             // 
             // lblGenerateTime
             // 
@@ -84,11 +86,21 @@
             lblSortTime.TabIndex = 4;
             lblSortTime.Text = "Sort Time";
             // 
+            // lblArray
+            // 
+            lblArray.AutoSize = true;
+            lblArray.Location = new Point(71, 435);
+            lblArray.Name = "lblArray";
+            lblArray.Size = new Size(158, 41);
+            lblArray.TabIndex = 5;
+            lblArray.Text = "Array Here";
+            // 
             // frmPerformanceTesting
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(764, 526);
+            Controls.Add(lblArray);
             Controls.Add(lblSortTime);
             Controls.Add(lblGenerateTime);
             Controls.Add(btnSort);
@@ -108,5 +120,6 @@
         private Button btnSort;
         private Label lblGenerateTime;
         private Label lblSortTime;
+        private Label lblArray;
     }
 }
