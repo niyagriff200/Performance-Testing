@@ -32,7 +32,8 @@ namespace Performance_Testing
                 arrayTest[i] = rng.Next(1, 101); //pick a random number between 1 and 100 and place in the arrayTest
             }
 
-            timer.Stop();
+            timer.Stop(); //stop the timer
+            lblGenerateTime.Text = timer.Elapsed.TotalMilliseconds + "ms"; //place the time elapsed in Milliseconds in the GenerateTime label
         }
 
         private void btnSort_Click(object sender, EventArgs e)
